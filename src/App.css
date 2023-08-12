@@ -1,38 +1,45 @@
-.App {
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 24px;
+  line-height: 30px;
+  color: #e0e0e0;
+  background-color: #2c3e50;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#output {
+  padding: 20px 20px 0 20px;
+  max-width: 600px;
+  margin: 50px auto;
+}
+
+.line {
+  margin-bottom: 50px;
+}
+
+.centered {
   text-align: center;
+  margin-top: 20px;
+  opacity: 1;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.circle {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  background-color: #e0e0e0;
+  border-radius: 50%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@keyframes typedjsBlink {
+  50% { opacity: 0.0; }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.typed-cursor {
+  opacity: 1;
+  animation: typedjsBlink 1s infinite; /* Adjust the '1s' to change the blinking speed */
+  font-size: 24px;
 }
